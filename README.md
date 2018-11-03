@@ -1,5 +1,10 @@
 # CoordinateMapMaker (v 0.2)
 
+![](img/home.PNG "Home Screen of program")
+
+
+![](img/map.PNG "preview of the generated map")
+
 This simple program gets a longitude and latitude from the user and then generates an interactive map.
 
 ## Set up
