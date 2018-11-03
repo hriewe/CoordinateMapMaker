@@ -9,11 +9,15 @@ from urllib.request import pathname2url
 import folium
 import webbrowser
 
+# get coordinates from user
 longitude = float(input("Enter the lognitude: "))
 latitude = float(input("Enter the latitude: "))
 
+# Generate the map
 map = folium.Map(location = [longitude, latitude], zoom_start = 7)
-print(map.save('map.html'))
+folium.Marker(location = [longitude, latitude], popup = 'Your exact coordinates',
+	icon = folium.Icon(color = 'red')).add_to(map)
+map.save('map.html')
 
 url = 'file:{}'.format(pathname2url(os.path.abspath('map.html')))
 webbrowser.open(url)
