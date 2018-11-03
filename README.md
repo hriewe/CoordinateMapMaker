@@ -16,6 +16,7 @@ Move into the programs direrctory:
 
 ## How to run (GUI)
 Install the needed modules with:
+
 `pip install PySimpleGUI`
 
 `pip install folium`
