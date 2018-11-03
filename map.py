@@ -17,8 +17,8 @@ latitude = float(input("Enter the latitude: "))
 map = folium.Map(location = [longitude, latitude], zoom_start = 7)
 folium.Marker(location = [longitude, latitude], popup = 'Your exact coordinates',
 	icon = folium.Icon(color = 'red')).add_to(map)
-map.save('map.html')
+map.save('mymap.html')
 
 # Open the map in the users browser
-url = 'file:{}'.format(pathname2url(os.path.abspath('map.html')))
+url = 'file:{}'.format(pathname2url(os.path.abspath('mymap.html')))
 webbrowser.open(url)
