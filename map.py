@@ -19,5 +19,6 @@ folium.Marker(location = [longitude, latitude], popup = 'Your exact coordinates'
 	icon = folium.Icon(color = 'red')).add_to(map)
 map.save('map.html')
 
+# Open the map in the users browser
 url = 'file:{}'.format(pathname2url(os.path.abspath('map.html')))
 webbrowser.open(url)
