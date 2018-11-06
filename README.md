@@ -19,16 +19,16 @@ Move into the programs direrctory:
 ## How to run (GUI)
 Install the needed modules with:
 
-`pip install PySimpleGUI`
+`sudo pip install PySimpleGUI`
 
-`pip install folium`
+`sudo pip install folium`
 
 Run the program:
 `python3 GUI.py`
 
 ## How to run (command line)
 Install the needed modules with:
-`pip install folium`
+`sudo pip install folium`
 
 Run the program:
 `python3 map.py`
