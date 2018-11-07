@@ -31,7 +31,7 @@ if button == 'Go':
 	latitude = float(value[1])
 
 	# Generate the map
-	map = folium.Map(location = [longitude, latitude], zoom_start = 7)
+	map = folium.Map(location = [longitude, latitude], zoom_start = 10)
 	folium.Marker(location = [longitude, latitude], popup = 'Your exact coordinates',
 		icon = folium.Icon(color = 'red')).add_to(map)
 	map.save('mymap.html')
