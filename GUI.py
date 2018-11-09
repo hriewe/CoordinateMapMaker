@@ -11,9 +11,10 @@ import folium
 import webbrowser
 import PySimpleGUI as sg
 
-
+# Set default GUI options
 sg.SetOptions(button_color=('white','#475841'), font=('Helvetica', 20))
 
+#Build the layout of the home screen
 layout = [[sg.Text('Welcome to Coordinate Map Maker', auto_size_text=False, justification='center')],
 	[sg.Text('')],
 	[sg.Text('Written by Hayden Riewe', auto_size_text=False, justification='center')],
@@ -22,11 +23,13 @@ layout = [[sg.Text('Welcome to Coordinate Map Maker', auto_size_text=False, just
 	[sg.Text('Enter the latitude', size=(20,1)), sg.InputText(size=(15,1))],
 	[sg.Button('Go', auto_size_button=True), sg.Exit()]]
 
+#Show the window to the user
 window = sg.Window('Welcome to CoordinateMapMaker!').Layout(layout)
 button, value = window.Read()
 
+#When user clicks Go button
 if button == 'Go':
-	# get coordinates from user
+	#Declare coordinate values
 	longitude = float(value[0])
 	latitude = float(value[1])
 
